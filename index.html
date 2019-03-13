@@ -1,0 +1,52 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reverse Polish Notation</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="construction">
+      <h1 class="app-name">Calculator</h1>
+      <div class="font-icons">
+        <i class="icon ion-md-remove"></i>
+        <i class="icon ion-md-square-outline"></i>
+        <i class="icon ion-md-close"></i>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="upper-section">
+        <div class="up-left">0</div>
+        <div class="down-right" id="inputValue" name="value" value="0">0</div>
+      </div>
+      <div class="button-section">
+          <div class="button button__special button__clear" data-value='CE'>CE</div>
+          <div class="button button__special" data-value='C'>C</div>
+          <div class="button button__special button__special--center" data-value='del'>
+            <img src="https://image.flaticon.com/icons/svg/32/32178.svg" width="14">
+          </div>
+          <div class="button button__special operator" data-value='divide'>÷</div>
+          <div class="button button__numeric">7</div>
+          <div class="button button__numeric">8</div>
+          <div class="button button__numeric">9</div>
+          <div class="button button__special operator" data-value='multiply'>×</div>
+          <div class="button button__numeric">4</div>
+          <div class="button button__numeric">5</div>
+          <div class="button button__numeric">6</div>
+          <div class="button button__special operator" data-value='subtract'>−</div>
+          <div class="button button__numeric">1</div>
+          <div class="button button__numeric">2</div>
+          <div class="button button__numeric">3</div>
+          <div class="button button__special operator" data-value='plus'>+</div>
+          <div class="button button__special" data-value='plus-minus'>±</div>
+          <div class="button button__numeric">0</div>
+          <div class="button button__special" data-value='decimal'>.</div>
+          <div class="button button__special" data-value='equals'>=</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+</html>
