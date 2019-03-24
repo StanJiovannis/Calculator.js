@@ -58,20 +58,19 @@ function functionality (e) {
             smallerScreen.textContent += getValue;
           }
 
-        } else {
-          if ( clickedSign === 'plus' || clickedSign === 'subtract' || clickedSign === 'multiply' || clickedSign === 'divide' ) {
-            var firstValue = frame.dataset.firstValue;
-            var secondValue = displayedValue;
-            var operator = frame.dataset.operator;
+         } else {
+            if ( clickedSign === 'plus' || clickedSign === 'subtract' || clickedSign === 'multiply' || clickedSign === 'divide' ) {
+              var firstValue = frame.dataset.firstValue;
+              var secondValue = displayedValue;
+              var operator = frame.dataset.operator;
             if ( smallerScreen.textContent !== '0' && (smallerScreenText.slice(-1) === '+' || smallerScreenText.slice(-1) === '−' || smallerScreenText.slice(-1) === '×' || smallerScreenText.slice(-1) === '÷') ) {
                 document.querySelector('.up-left').textContent = delElem (smallerScreen.textContent) + getValue;
 
-            }  else {
+            } else {
                smallerScreen.classList.add('visible');
                smallerScreen.textContent += getValue;
-
-
-          }
+            }
+            
             if ( firstValue && operator && previousType !== 'operator' ) {
                 var calculatedVal = calc (firstValue, operator, secondValue);
                 displayValue.textContent = calculatedVal;
@@ -129,11 +128,8 @@ function functionality (e) {
                } else {
                  smallerScreen.textContent = '0';
                }
-
             }
-
          }
-
         }
 
     e.stopPropagation();
