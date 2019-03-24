@@ -1,8 +1,3 @@
-console.log("tets");
-var data = {
-  stack: []
-}
-
 function calc (number1, operator, number2) {
   let result = '';
 
